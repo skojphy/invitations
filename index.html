@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>이벤트 초대장 모바일 웹 포트폴리오</title>
+<meta name="description" content="링크 하나로 열리는 이벤트 초대장. 감성 초대장부터 참가 신청 페이지, 게임형 청첩장까지 다양한 스타일로 제작합니다.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="이벤트 초대장 모바일 웹 포트폴리오">
+<meta property="og:description" content="감성 초대장부터 참가 신청 페이지, 게임형 청첩장까지 다양한 스타일로 제작합니다.">
+<meta property="og:image" content="/img/og.jpg">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+:root{--bg:#f3f1ec;--ink:#1d2321;--sub:#56605c;--line:#dedad2;--accent:#2a9d8f;--accent-ink:#1f6f66;--chip:#e2ece9;--card:#fbfaf7}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Pretendard,'Noto Sans KR',system-ui,sans-serif;background:var(--bg);color:var(--ink);-webkit-font-smoothing:antialiased;line-height:1.6}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+header.hero{padding:88px 0 56px}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.14em;color:var(--accent)}
+h1{font-size:clamp(34px,6vw,60px);line-height:1.18;font-weight:800;letter-spacing:-.03em;margin-top:14px}
+.lead{font-size:clamp(16px,2.2vw,19px);color:var(--sub);margin-top:18px;max-width:560px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.chip{font-size:14px;font-weight:600;padding:7px 13px;border-radius:999px;background:var(--chip);color:var(--accent-ink);text-decoration:none}
+a.chip:hover{background:#d3e4df}
+section.project{padding:64px 0;border-top:1px solid var(--line);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:56px;align-items:center}
+.num{font-size:13px;font-weight:700;letter-spacing:.12em;color:var(--accent)}
+h2{font-size:clamp(28px,4vw,40px);line-height:1.22;font-weight:800;letter-spacing:-.02em;margin-top:10px}
+.desc{font-size:17px;color:var(--sub);margin-top:14px}
+ul{list-style:none;margin-top:22px}
+li{font-size:16px;padding:9px 0 9px 20px;position:relative;border-top:1px solid var(--line)}
+li:last-child{border-bottom:1px solid var(--line)}
+li::before{content:'';position:absolute;left:2px;top:19px;width:7px;height:7px;border-radius:50%;background:var(--accent)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:20px}
+.tags span{font-size:13px;font-weight:600;padding:5px 11px;border-radius:999px;background:var(--chip);color:var(--accent-ink)}
+.visit{display:inline-flex;align-items:center;gap:8px;margin-top:24px;padding:13px 20px;border-radius:12px;background:var(--ink);color:#fff;font-weight:700;font-size:15px;text-decoration:none;transition:transform .15s}
+.visit:hover{transform:translateY(-2px)}
+.visit svg{width:16px;height:16px}
+.phones{display:flex;justify-content:center;gap:18px}
+.phone{flex:0 1 210px;border-radius:30px;background:#151817;padding:8px;box-shadow:0 26px 50px -22px rgba(20,30,28,.4)}
+.phone img{display:block;width:100%;height:auto;border-radius:23px;aspect-ratio:600/1299}
+.phones.three .phone:nth-child(2){transform:translateY(-24px)}
+footer{border-top:1px solid var(--line);padding:36px 0 48px;color:#8a918e;font-size:14px}
+@media (max-width:860px){
+  header.hero{padding:56px 0 36px}
+  section.project{grid-template-columns:1fr;gap:32px;padding:48px 0}
+  .phones{gap:10px;overflow-x:auto;justify-content:flex-start;scroll-snap-type:x mandatory;padding:4px 2px 30px;margin:0 -20px;padding-left:20px;padding-right:20px}
+  .phone{flex:0 0 62%;scroll-snap-align:center;border-radius:26px;padding:7px}
+  .phone img{border-radius:20px}
+  .phones.three .phone:nth-child(2){transform:none}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <div class="eyebrow">PORTFOLIO</div>
+    <h1>이벤트 초대장<br>모바일 웹</h1>
+    <p class="lead">메시지로 받은 링크 하나로 열리는 초대장. 행사 분위기에 맞춰 감성적인 초대장부터 포스터형 신청 페이지, 게임형 청첩장까지 다양한 스타일로 제작합니다.</p>
+    <nav class="chips">
+      <a class="chip" href="#invite">감성 초대장</a>
+      <a class="chip" href="#event">포스터형 신청 페이지</a>
+      <a class="chip" href="#escape">게임형 청첩장</a>
+    </nav>
+  </header>
+
+  <section class="project" id="invite">
+    <div>
+      <div class="num">01 · 모바일 초대장</div>
+      <h2>동호회 모임<br>행사 초대장</h2>
+      <p class="desc">행사 안내부터 사진, 축하 메시지, 참석 접수까지 한 페이지에서 끝나는 초대장입니다.</p>
+      <ul>
+        <li>행사 일시·장소 안내와 길찾기 연결</li>
+        <li>행사일 기준 D-day 자동 표시</li>
+        <li>사진 갤러리 (확대 보기)</li>
+        <li>축하 메시지 작성·전체보기 방명록</li>
+        <li>참석 의사 전달 폼, 연락·회비 안내 버튼</li>
+      </ul>
+      <div class="tags"><span>SvelteKit</span><span>MongoDB</span><span>PhotoSwipe</span><span>Vercel</span></div>
+      <a class="visit" href="https://aboha.seohey.co.kr/rock-festival" target="_blank" rel="noopener">사이트 보기 <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 11 11 5M6 5h5v5"/></svg></a>
+    </div>
+    <div class="phones three">
+      <div class="phone"><img src="img/invite-1.webp" alt="초대장 첫 화면" loading="lazy"></div>
+      <div class="phone"><img src="img/invite-2.webp" alt="사진 갤러리와 연락 안내" loading="lazy"></div>
+      <div class="phone"><img src="img/invite-3.webp" alt="축하 메시지와 참석 접수" loading="lazy"></div>
+    </div>
+  </section>
+
+  <section class="project" id="event">
+    <div>
+      <div class="num">02 · 이벤트 참가 신청</div>
+      <h2>이벤트 참가<br>신청 페이지</h2>
+      <p class="desc">포스터 키 비주얼로 시선을 끌고, 유의사항 확인 후 참가 신청까지 이어지는 페이지입니다.</p>
+      <ul>
+        <li>키 비주얼 중심의 다크 톤 초대 화면</li>
+        <li>행사 시작까지 실시간 카운트다운</li>
+        <li>일시·장소 안내와 지도 길찾기 연결</li>
+        <li>신청 전 유의사항 확인 → 참가 신청 흐름</li>
+        <li>신청 결과 화면과 관리자 페이지</li>
+      </ul>
+      <div class="tags"><span>SvelteKit</span><span>MongoDB</span><span>Vercel</span></div>
+      <a class="visit" href="https://aboha-black-and-white.seohey.co.kr" target="_blank" rel="noopener">사이트 보기 <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 11 11 5M6 5h5v5"/></svg></a>
+    </div>
+    <div class="phones">
+      <div class="phone"><img src="img/event-1.webp" alt="포스터형 초대 화면" loading="lazy"></div>
+      <div class="phone"><img src="img/event-2.webp" alt="신청 전 확인 사항" loading="lazy"></div>
+    </div>
+  </section>
+
+  <section class="project" id="escape">
+    <div>
+      <div class="num">03 · 게임형 청첩장</div>
+      <h2>방탈출형<br>모바일 청첩장</h2>
+      <p class="desc">결혼 소식을 퍼즐 게임으로 풀어가며 예식 정보에 도착하는 인터랙티브 청첩장입니다.</p>
+      <ul>
+        <li>닉네임 입력 후 스토리 진행, 이어하기 지원</li>
+        <li>스토리를 따라가는 단계별 퍼즐과 힌트</li>
+        <li>정답 입력 검증, 스테이지 주소 난독화</li>
+        <li>참여자 기록·미션·피드 데이터 연동</li>
+        <li>완료 후 모바일 청첩장·오픈 카톡 연결</li>
+      </ul>
+      <div class="tags"><span>SvelteKit</span><span>Svelte 5</span><span>Notion API</span><span>Vercel</span></div>
+      <a class="visit" href="https://wedding-es.vercel.app" target="_blank" rel="noopener">사이트 보기 <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 11 11 5M6 5h5v5"/></svg></a>
+    </div>
+    <div class="phones three">
+      <div class="phone"><img src="img/escape-1.webp" alt="카페 메뉴판 퍼즐" loading="lazy"></div>
+      <div class="phone"><img src="img/escape-2.webp" alt="스토리 장면 퍼즐" loading="lazy"></div>
+      <div class="phone"><img src="img/escape-3.webp" alt="타일 선택 퍼즐" loading="lazy"></div>
+    </div>
+  </section>
+
+  <footer>모든 페이지는 모바일 환경을 기준으로 제작했습니다. 각 사이트는 휴대폰에서 열어보시는 것을 추천합니다.</footer>
+</div>
+</body>
+</html>
